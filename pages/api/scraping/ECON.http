@@ -1,0 +1,33 @@
+POST https://pisa.ucsc.edu/class_search/index.php
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Content-Type: application/x-www-form-urlencoded
+Origin: https://pisa.ucsc.edu
+Cookie: PHPSESSID=s4iqrd5inh9eindnl9orbafi56; _ga=GA1.2.1037046230.1624406057; _gid=GA1.2.276758860.1624406057; lcsrftoken=UN80ZFoYKdvcvp8axcWsidEUCVCXxFYBAA0hHOVgssY=; PS_TokenSite=https://my.ucsc.edu/psp/csprd/?cs9-prd-web-1-1810-PORTAL-PSJSESSIONID; SignOnDefault=W1571355; cs9-prd-web-1-1810-PORTAL-PSJSESSIONID=s142JWU5Z5DVTzm82ZDyQ1wlXDoByT7E!-716494580; AWSELB=2793551E63E1EB6627976F8DCFCF3B73CE3238B98914EEB38D1A4C92AB634F599F667B56FD54A19E86059B0B067D969A753BB97894DE5214A2C9F3B056A0B8B8F83B74B3; AWSELBCORS=2793551E63E1EB6627976F8DCFCF3B73CE3238B98914EEB38D1A4C92AB634F599F667B56FD54A19E86059B0B067D969A753BB97894DE5214A2C9F3B056A0B8B8F83B74B3
+Content-Length: 437
+Accept-Language: en-us
+Host: pisa.ucsc.edu
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.1.1 Safari/605.1.15
+Referer: https://pisa.ucsc.edu/class_search/
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Type: application/x-www-form-urlencoded
+
+action=results&binds[:term]=2210&binds[:subject]=ECON&binds[:reg_status]=O&rec_start=0&rec_dur=1000
+
+###
+
+POST https://pisa.ucsc.edu/class_search/index.php
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Content-Type: application/x-www-form-urlencoded
+Origin: https://pisa.ucsc.edu
+#Cookie: PHPSESSID=s4iqrd5inh9eindnl9orbafi56; _ga=GA1.2.1037046230.1624406057; _gid=GA1.2.276758860.1624406057; lcsrftoken=UN80ZFoYKdvcvp8axcWsidEUCVCXxFYBAA0hHOVgssY=; PS_TokenSite=https://my.ucsc.edu/psp/csprd/?cs9-prd-web-1-1810-PORTAL-PSJSESSIONID; SignOnDefault=W1571355; cs9-prd-web-1-1810-PORTAL-PSJSESSIONID=s142JWU5Z5DVTzm82ZDyQ1wlXDoByT7E!-716494580; AWSELB=2793551E63E1EB6627976F8DCFCF3B73CE3238B98914EEB38D1A4C92AB634F599F667B56FD54A19E86059B0B067D969A753BB97894DE5214A2C9F3B056A0B8B8F83B74B3; AWSELBCORS=2793551E63E1EB6627976F8DCFCF3B73CE3238B98914EEB38D1A4C92AB634F599F667B56FD54A19E86059B0B067D969A753BB97894DE5214A2C9F3B056A0B8B8F83B74B3
+Content-Length: 437
+Accept-Language: en-us
+Host: pisa.ucsc.edu
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.1.1 Safari/605.1.15
+Referer: https://pisa.ucsc.edu/class_search/
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Type: application/x-www-form-urlencoded
+
+action=results&binds[:term]=2210&binds[:subject]=ECON&binds[:reg_status]=O&rec_start=0&rec_dur=1000

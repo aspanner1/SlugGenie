@@ -1,0 +1,145 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: 200px repeat(3, 1fr);
+  grid-template-rows: max-content max-content;
+  grid-template-areas:
+    "sidebar userInfo userInfo userInfo"
+    "sidebar userInfo userInfo userInfo"
+    "sidebar userInfo userInfo userInfo"
+    "sidebar searchResults searchResults searchResults"
+    "sidebar searchResults searchResults searchResults"
+    "sidebar searchResults searchResults searchResults"
+    "sidebar searchResults searchResults searchResults";
+
+  height: 100%;
+  gap: 10px;
+  grid-auto-columns: minmax(100px, auto);
+  grid-auto-rows: minmax(50px, auto);
+  min-width: 850px;
+}
+
+.sidebar {
+  background-color: aqua;
+  grid-area: sidebar;
+  height: 100%;
+  list-style: none;
+  text-decoration: none;
+  justify-content: center;
+  width: 100%;
+}
+
+.menu_item {
+  height: 30%;
+  width: 100%;
+  display: block;
+  font-size: 20px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  padding: 7.5px;
+}
+
+.menu_item:hover {
+  background-color: whitesmoke;
+  cursor: default;
+}
+
+.menu_text {
+  margin-left: 10px;
+}
+
+.inline_text {
+  display: inline;
+}
+
+.userInfo {
+  grid-area: userInfo;
+  border: 5px solid black;
+  font-size: 20px;
+  margin: 10px;
+  position: sticky;
+}
+
+.classType,
+.majorDeclaration,
+.majorName {
+  margin-left: 20px;
+}
+
+.majorStatus {
+  position: relative;
+  left: 5px;
+}
+
+.searchResults {
+  margin: 10px;
+  border: 5px solid black;
+}
+
+.submitUserInfoButton {
+  background-color: #0078d0;
+  border: 0;
+  border-radius: 56px;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  font-family: system-ui, -apple-system, system-ui, "Segoe UI", Roboto, Ubuntu,
+    "Helvetica Neue", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  outline: 0;
+  padding: 16px 21px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s;
+  -webkit-user-select: none;
+  user-select: none;
+  touch-action: manipulation;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 20px;
+  top: 15px;
+}
+
+.submitUserInfoButton:before {
+  background-color: initial;
+  background-image: linear-gradient(#fff 0, rgba(255, 255, 255, 0) 100%);
+  border-radius: 125px;
+  content: "";
+  height: 50%;
+  left: 4%;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  transition: all 0.3s;
+  width: 92%;
+}
+
+.submitUserInfoButton:hover {
+  box-shadow: rgba(255, 255, 255, 0.2) 0 3px 15px inset,
+    rgba(0, 0, 0, 0.1) 0 3px 5px, rgba(0, 0, 0, 0.1) 0 10px 13px;
+  transform: scale(1.05);
+}
+
+@media (min-width: 768px) {
+  .submitUserInfoButton {
+    padding: 8px 16px;
+    font-size: 24px;
+  }
+}
+
+.searchResults {
+  grid-area: searchResults;
+}
+
+.select {
+  display: inline-block;
+  width: 400px;
+  margin: 10px;
+}
+
+.majorName > .select,
+.classType > .select {
+  position: relative;
+  left: 15px;
+}

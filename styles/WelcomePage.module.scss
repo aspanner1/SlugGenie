@@ -1,0 +1,61 @@
+.title {
+  font-style: italic;
+  font-size: 20px;
+  grid-area: title;
+  align-self: center;
+  justify-self: center;
+}
+
+.card {
+  background-image: url("/sexygirl.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:
+    ". title title ."
+    ". . . ."
+    ". search search ."
+    ". . . .";
+  gap: 1rem;
+}
+
+.button-1 {
+  font-family: Hack, monospace;
+  background: #0f0f6d;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 2em;
+  padding: 1.5rem;
+  border: 0;
+  transition: all 0.5s;
+  border-radius: 10px;
+  width: auto;
+  position: relative;
+
+  &::after {
+    content: "\f054";
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 400;
+    position: absolute;
+    left: 85%;
+    top: 31%;
+    right: 5%;
+    bottom: 0;
+    opacity: 0;
+  }
+
+  &:hover {
+    background: #2b2bff;
+    transition: all 0.5s;
+    border-radius: 10px;
+    box-shadow: 0px 6px 15px #0000ff61;
+    padding: 1.5rem 3.5rem 1.5rem 1.5rem;
+
+    &::after {
+      opacity: 1;
+      transition: all 0.5s;
+    }
+  }
+}

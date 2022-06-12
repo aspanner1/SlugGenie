@@ -1,0 +1,52 @@
+.title {
+  font-style: italic;
+  grid-area: title;
+  align-self: center;
+  justify-self: center;
+  font-size: 90px;
+  font-weight: 600;
+  background-image: linear-gradient(to left, #553c9a, #b393d3);
+  color: transparent;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  text-overflow: ellipsis ellipsis;
+}
+
+.card {
+  background-image: url("/graduates.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:
+    ". title title ."
+    ". . . ."
+    ". search search ."
+    ". . . .";
+  gap: 1rem;
+}
+
+.button1 {
+  grid-area: search;
+  font-family: Hack, monospace;
+  background: #00008b;
+  color: white;
+  cursor: pointer;
+  font-size: 2em;
+  padding: 1.5rem;
+  border: 0;
+  transition: all 0.5s;
+  border-radius: 10px;
+  width: auto;
+  height: 50%;
+  position: relative;
+  align-self: end;
+}
+
+.button1:hover {
+  background: lightblue;
+  transition: all 0.5s;
+  border-radius: 10px;
+}
