@@ -8,5 +8,6 @@ How to use:
 4. (Optional) Enter any GE categories you still need to take 
 5. Click "Generate" 
 
+Your life may be in shambles but your class schedule will be perfect. Enjoy!
 
 
